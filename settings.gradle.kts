@@ -20,4 +20,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "MVVMI"
-include(":app")
+//include(":app")
