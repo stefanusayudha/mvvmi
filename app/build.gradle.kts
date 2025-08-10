@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.main
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
@@ -31,6 +33,11 @@ android {
     }
     buildFeatures {
         compose = true
+    }
+    sourceSets {
+        getByName("main") {
+            java.srcDirs("src/")
+        }
     }
 }
 
