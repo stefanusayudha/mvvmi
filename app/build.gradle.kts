@@ -36,7 +36,7 @@ android {
     }
     sourceSets {
         getByName("main") {
-            java.srcDirs("src/")
+            java.srcDirs("main/")
         }
     }
 }
