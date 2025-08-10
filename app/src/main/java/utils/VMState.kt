@@ -1,4 +1,4 @@
-package com.singularityuniverse.utils
+package utils
 
 import kotlinx.coroutines.flow.MutableStateFlow
 

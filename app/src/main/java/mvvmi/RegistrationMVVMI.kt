@@ -1,4 +1,4 @@
-package com.singularityuniverse.mvvmi
+package mvvmi
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Box
@@ -13,6 +13,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import kotlinx.coroutines.launch
+
+internal data class UISTate(
+    val isSubmitButtonEnabled: Boolean = true,
+    val isShowSubmitButtonLoading: Boolean = false
+)
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

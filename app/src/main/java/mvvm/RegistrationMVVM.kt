@@ -1,4 +1,4 @@
-package com.singularityuniverse.mvvm
+package mvvm
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Box
@@ -12,7 +12,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.singularityuniverse.utils.VMState
+import utils.VMState
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

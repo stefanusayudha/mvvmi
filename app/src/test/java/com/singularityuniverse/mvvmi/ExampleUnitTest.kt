@@ -1,5 +1,6 @@
-package com.singularityuniverse.mvvmi
+package mvvmi
 
+import mvvmi
 import org.junit.Test
 
 import org.junit.Assert.*

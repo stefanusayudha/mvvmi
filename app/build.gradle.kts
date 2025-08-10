@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.singularityuniverse.mvvmi"
+    namespace = "mvvmi"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.singularityuniverse.mvvmi"
+        applicationId = "mvvmi"
         minSdk = 27
         targetSdk = 35
         versionCode = 1

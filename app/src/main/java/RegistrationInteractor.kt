@@ -1,5 +1,3 @@
-package com.singularityuniverse.mvvm
-
 import kotlinx.coroutines.delay
 
 interface RegistrationInteractor {

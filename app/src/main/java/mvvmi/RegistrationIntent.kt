@@ -1,4 +1,4 @@
-package com.singularityuniverse.mvvmi
+package mvvmi
 
 sealed class RegistrationIntent {
     data class Registration(

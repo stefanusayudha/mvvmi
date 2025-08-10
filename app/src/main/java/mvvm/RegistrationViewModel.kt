@@ -1,9 +1,11 @@
-package com.singularityuniverse.mvvm
+package mvvm
 
+import RegistrationInteractor
+import RegistrationInteractorImpl
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.singularityuniverse.utils.VMState
-import com.singularityuniverse.utils.initIdle
+import utils.VMState
+import utils.initIdle
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch

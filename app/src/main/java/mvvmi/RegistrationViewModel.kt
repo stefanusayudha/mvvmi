@@ -1,5 +1,7 @@
-package com.singularityuniverse.mvvmi
+package mvvmi
 
+import RegistrationInteractor
+import RegistrationInteractorImpl
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -9,10 +11,10 @@ import kotlinx.coroutines.withContext
 
 class RegistrationViewModel : ViewModel(), RegistrationInteractor by RegistrationInteractorImpl() {
 
-    val uiState: StateFlow<UISTate>
+    internal val uiState: StateFlow<UISTate>
         field = MutableStateFlow(UISTate())
 
-    val intent: StateFlow<RegistrationIntent?>
+    internal val intent: StateFlow<RegistrationIntent?>
         field = MutableStateFlow<RegistrationIntent?>(null)
 
     fun onHandled() {
