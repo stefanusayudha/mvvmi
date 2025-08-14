@@ -321,7 +321,7 @@ class RegistrationViewModel(
 ```
 
 **MVVMI**
-Viewmodel mengontrol intensi dan hoisting ui state.
+Viewmodel menghandle prosedur (bukan mengontrol) dan hoisting ui state (opsional).
 Reduksi Data API didelegasikan pada Interaktor.
 
 ```kotlin
