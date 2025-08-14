@@ -253,10 +253,11 @@ fun Registration(
 <details>
 
 **MVVM**
-```kotlin
 Viewmodel lebih sederhana.
 
 note: Dalam pattern MVVM; Viewmodel tidak boleh menyimpan UIState(pada prakteknya sering dilakukan), tidak boleh mengontrol UI (pada prakteknya sering dilakukan), dan tidak boleh mengandung prosedur UI (pada prakteknya sering dilakukan).
+
+```kotlin
 class RegistrationViewModel(
     private val interactor: RegistrationInteractor = RegistrationInteractorImpl()
 ) : ViewModel() {
@@ -320,6 +321,9 @@ class RegistrationViewModel(
 ```
 
 **MVVMI**
+Viewmodel mengontrol intensi dan hoisting ui state.
+Reduksi Data API didelegasikan pada Interaktor.
+
 ```kotlin
 class RegistrationViewModel : ViewModel(), RegistrationInteractor by RegistrationInteractorImpl() {
 
