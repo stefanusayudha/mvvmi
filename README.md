@@ -1,4 +1,4 @@
-# Side to Side Comparison
+# Side to Side Comparison MVVM vs MVVMI
 
 ## Screen
 <details>
