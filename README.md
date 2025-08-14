@@ -724,6 +724,7 @@ Kekurangan
 - Tidak ada yang bisa mengatakan intensi dari proses yang sedang berjalan.
 - Kontrol UI bersifat Implicit (Di dalam UI dan tidak bisa dipisahkan atau diinterupsi tanpa memodifikasi ui itu sendiri).
 - Reduksi data menjadi UI state terjadi dimana-mana (tersebar) membuat ketergantungan berat pada domain entity.
+- Variant Wildfire. Karena ketergantungan pada domain Entity, membuat variant dari komponent cenderung meningkat jumlahnya sesuai jumlah konteks dan kombinasi konteks.
 - **Sulit dimaintain.** Publisher-Subscriber Pattern membuat Prosedur tersebar pada UI/Activity tanpa definisi dan kontrak yang jelas.
 - Prosedur tidak sekuensial, bolak-balik, tersebar, dan tidak ada garansi urutan yang bisa dipahami sekali lihat. Dalam kasus Jetpack compose, prosedural call sangatlah rumit, karena urutan prosedur akan mempengaruhi lifecycle dari composable object.
 - Pembatalan prosedur mungkin sangat rumit dan harus memperhatikan baik2 semua edgcase, flags, dan buffer terhandle dengan benar di setiap step dari prosedur.
