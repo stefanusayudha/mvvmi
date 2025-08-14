@@ -323,7 +323,7 @@ class RegistrationViewModel(
 
 **MVVMI**
 Viewmodel menghandle prosedur (bukan mengontrol) dan hoisting ui state (opsional).
-Reduksi Data API didelegasikan pada Interaktor.
+Reduksi API didelegasikan pada Interaktor.
 
 ```kotlin
 class RegistrationViewModel : ViewModel(), RegistrationInteractor by RegistrationInteractorImpl() {
