@@ -715,7 +715,7 @@ Prosedur diproses dalam 1 method, minim transaksi screen-viewmodel yang tidak pe
 **MVVM**
 Kelebihan
 - Lebih sedikit kode pada viewmodel.
-- Lebih sedikit objek essensial (+ lebih sedikit membebani effort pengkodean).
+- Lebih sedikit objek essensial (+ lebih sedikit membebani effort pengkodean pada awalnya saja).
 - Pada dasarnya Tidak memerlukan interaktor (viewmodel langsung bekerja sebagai decoupler view dan model, dan reducer dari Data Layer API).
 - viewmodel lebih sederhana.
 - menerapkan prinsib viewmodel sesuai design dari ViewModel object (sebagai decoupler view dan model) menggunakan Publisher-Subscriber Pattern.
