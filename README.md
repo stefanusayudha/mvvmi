@@ -167,6 +167,7 @@ Tidak ada reduksi internal, menghilangkan sepenuhnya ketergantungan UI dengan do
 Mengurangi variant dari komponent ui dengan signifikan.
 
 ```kotlin
+// Harus Ready to display dan tidak boleh ada reduksi lanjutan.
 internal data class UISTate(
     val isSubmitButtonEnabled: Boolean = true,
     val isShowSubmitButtonLoading: Boolean = false
