@@ -756,6 +756,6 @@ Kelebihan
 - Volatilitas rendah. Kita tidak mengubah UI state (Mutate), akan tetapi mengeluarkan UIstate baru (Emmit). Tidak merubah variable tapi melakukan reduksi + emit.
 
 Kekurangan
-- (-) Lebih Robust. Lebih banyak objek esensial.
+- (-) Lebih Robust. Lebih banyak objek esensial. Beban kognitif awal lebih tinggi bagi pemula. Namun akan membangung prinsib pemisahan tanggung jawab yang lebih baik.
 - Paradigma yang belum umum. Mungkin perlu penyesuaian mindset dari Imperative ke Declarative. Menciptakan kesan kompleksitas tinggi bagi yang belum terbiasa.
 </details>
