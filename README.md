@@ -4,6 +4,10 @@
 <details>
   
 **MVVM**
+Screen yang Bulky.
+Reduksi dimana-mana.
+Prosedur yang tidak terdefinisi dengan jelas.
+
 ```kotlin
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -158,6 +162,10 @@ fun Registration(
 ```
 
 **MVVMI**
+Screen lebih sederhana dan proses handling yang indentikal memungkinkan ekstraksi lebih jauh jika diperlukan.
+Tidak ada reduksi internal, menghilangkan sepenuhnya ketergantungan UI dengan domain entity.
+Mengurangi variant dari komponent ui dengan signifikan.
+
 ```kotlin
 internal data class UISTate(
     val isSubmitButtonEnabled: Boolean = true,
@@ -246,6 +254,9 @@ fun Registration(
 
 **MVVM**
 ```kotlin
+Viewmodel lebih sederhana.
+
+note: Dalam pattern MVVM; Viewmodel tidak boleh menyimpan UIState(pada prakteknya sering dilakukan), tidak boleh mengontrol UI (pada prakteknya sering dilakukan), dan tidak boleh mengandung prosedur UI (pada prakteknya sering dilakukan).
 class RegistrationViewModel(
     private val interactor: RegistrationInteractor = RegistrationInteractorImpl()
 ) : ViewModel() {
@@ -579,6 +590,7 @@ Publisher-Subscriber Pattern membuat proses dari sebuah prosedur tersebar dan ti
 ```
 
 **MVVMI**
+
 Prosedur diproses dalam 1 method, minim transaksi screen-viewmodel yang tidak perlu
 ```kotlin
     suspend fun onRegistrationIntent(data: RegistrationIntent.Registration) {
